@@ -8,7 +8,7 @@ const Todos = (props) => {
       <ul>
         {
           props.items.map((item, index) => {
-            return <li key={props.title+index}><input type="checkbox" defaultChecked={ item.completed }/>{ item.name }</li>
+            return <li key={props.title+index}><input type="checkbox" checked={ item.completed }/>{ item.name }</li>
           })
         }
       </ul>
